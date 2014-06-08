@@ -13,3 +13,18 @@
  *= require_tree .
  *= require_self
  */
+.board {
+  width: 60px;
+  height: 60px;
+  border-style: solid;
+  border-size:3px;
+  border-color:red;
+  border-radius: 4px;
+  float:left;
+  margin-right: 4px;
+  font-size: 35px;
+  font-style:bold;
+  text-align: center;
+  vertical-align: center;
+  
+  }

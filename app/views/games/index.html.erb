@@ -1,0 +1,34 @@
+<div class="hero-unit">
+  <h1>Tic Tac Toe</h1>
+  <div>
+    <button ng-click="newGame()">New Game</button>
+    <span ng-show="winner">{{winner}} has won!!</span>
+  </div>
+
+
+
+<div ng-controller="GamesCtrl" >
+
+  <div>
+    <div class="board" ng-click="addPlay1()">{{play1}}</div>
+    <div class="board" ng-click="addPlay2()">{{play2}}</div>
+    <div class="board" ng-click="addPlay3()">{{play3}}</div>
+  </div><br><br><br><br>
+  <div>
+    <div class="board" ng-click="addPlay4()">{{play4}}</div>
+    <div class="board" ng-click="addPlay5()">{{play5}}</div>
+    <div class="board" ng-click="addPlay6()">{{play6}}</div>
+  </div><br><br><br><br>
+  <div>
+    <div class="board" ng-click="addPlay7()">{{play7}}</div>
+    <div class="board" ng-click="addPlay8()">{{play8}}</div>
+    <div class="board" ng-click="addPlay9()">{{play9}}</div>
+  </div><br><br><br><br>
+
+
+{{plays}} {{count}}  {{plays.play1}} {{plays.play2}}
+
+    <button ng-click="score()">SCORE</button><br>
+    {{winner}}
+
+</div>
