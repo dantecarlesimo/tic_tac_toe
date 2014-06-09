@@ -7,7 +7,7 @@
 
 
 <div ng-controller="GamesCtrl" >
-    <button ng-click="clear()">New Game</button>
+    <button ng-click="clear()">New Game</button>  <p>{{errorMessage}}</p>
 
   <div>
     <div class="board" ng-click="addPlay('play1')">{{plays.play1}}</div>
@@ -28,7 +28,7 @@
 
 <!-- {{plays}} {{count}}  {{plays.play1}} {{plays.play2}} -->
 
-    <button ng-click="score()">SCORE</button><br>
+    <button ng-click="score()">Click for Winner!</button><br>
     {{winner}}
 
 </div>
