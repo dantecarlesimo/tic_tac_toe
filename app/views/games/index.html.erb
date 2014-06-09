@@ -1,28 +1,28 @@
 <div class="hero-unit">
   <h1>Tic Tac Toe</h1>
   <div>
-    <button ng-click="newGame()">New Game</button>
     <span ng-show="winner">{{winner}} has won!!</span>
   </div>
 
 
 
 <div ng-controller="GamesCtrl" >
+    <button ng-click="clear()">New Game</button>
 
   <div>
-    <div class="board" ng-click="addPlay1()">{{play1}}</div>
-    <div class="board" ng-click="addPlay2()">{{play2}}</div>
-    <div class="board" ng-click="addPlay3()">{{play3}}</div>
+    <div class="board" ng-click="addPlay('play1')">{{plays.play1}}</div>
+    <div class="board" ng-click="addPlay('play2')">{{plays.play2}}</div>
+    <div class="board" ng-click="addPlay('play3')">{{plays.play3}}</div>
   </div><br><br><br><br>
   <div>
-    <div class="board" ng-click="addPlay4()">{{play4}}</div>
-    <div class="board" ng-click="addPlay5()">{{play5}}</div>
-    <div class="board" ng-click="addPlay6()">{{play6}}</div>
+    <div class="board" ng-click="addPlay('play4')">{{plays.play4}}</div>
+    <div class="board" ng-click="addPlay('play5')">{{plays.play5}}</div>
+    <div class="board" ng-click="addPlay('play6')">{{plays.play6}}</div>
   </div><br><br><br><br>
   <div>
-    <div class="board" ng-click="addPlay7()">{{play7}}</div>
-    <div class="board" ng-click="addPlay8()">{{play8}}</div>
-    <div class="board" ng-click="addPlay9()">{{play9}}</div>
+    <div class="board" ng-click="addPlay('play7')">{{plays.play7}}</div>
+    <div class="board" ng-click="addPlay('play8')">{{plays.play8}}</div>
+    <div class="board" ng-click="addPlay('play9')">{{plays.play9}}</div>
   </div><br><br><br><br>
 
 
